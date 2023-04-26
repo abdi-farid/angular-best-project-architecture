@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 
 ## commands utils
-- npm install @angular/cli@15.2.7 --save-dev 
+- ***npm install @angular/cli@15.2.7 --save-dev*** 
 permet de mettre à jour la version de angular local du projet à la version précisée dans la commande
 
 
