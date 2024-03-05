@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {ApiService} from "../../services/api.service";
 
 @Component({
   selector: 'app-list',
@@ -7,9 +8,11 @@ import { Component } from '@angular/core';
       list works!
     </p>
   `,
-  styles: [
-  ]
+  styles: []
 })
-export class ListComponent {
+export class ListComponent<T> {
+
+  constructor(private service: ApiService<T>) {
+  }
 
 }

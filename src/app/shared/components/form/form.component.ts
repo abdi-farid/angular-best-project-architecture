@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {ApiService} from "../../services/api.service";
 
 @Component({
   selector: 'app-form',
@@ -7,9 +8,9 @@ import { Component } from '@angular/core';
       form works!
     </p>
   `,
-  styles: [
-  ]
+  styles: []
 })
-export class FormComponent {
-
+export class FormComponent<T> {
+  constructor(private service: ApiService<T>) {
+  }
 }
